@@ -1,4 +1,4 @@
-int swPin = 26;
+int swPin = 21;
 int old_value = HIGH;
 
 void setup(){
