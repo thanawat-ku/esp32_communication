@@ -1,5 +1,5 @@
 int ledPin = 5;
-int swPin = 26;
+int swPin = 21;
 
 void setup(){
     pinMode(ledPin, OUTPUT);
@@ -7,7 +7,7 @@ void setup(){
 }
 
 void loop(){
-    if(digitalRead(swPin==LOW)){
+    if(digitalRead(swPin)==LOW){
         digitalWrite(ledPin, HIGH);
     }else{
         digitalWrite(ledPin, LOW);
