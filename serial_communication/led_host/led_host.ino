@@ -9,10 +9,10 @@ void setup(){
 void loop(){
     if(Serial2.available()){
         String v = Serial2.readString();
-        if(v.compreTo("ON")==0){
+        if(v.compareTo("ON")==0){
             digitalWrite(ledPin, HIGH);
         }
-        if(v.compreTo("OFF")==0){
+        if(v.compareTo("OFF")==0){
             digitalWrite(ledPin, LOW);
         }
     }
